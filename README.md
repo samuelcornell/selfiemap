@@ -1,7 +1,7 @@
 
 # Link To Data Viz
 
-[The visualization can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html/)
+[The visualization can be found here.](https://samuelcornell.github.io/selfiemap/source/)
 
 
 # Project Description

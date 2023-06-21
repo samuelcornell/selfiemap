@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/mapbox/light-v11',
-    accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozdDJqMGoxY2lhM2VwMzdoZDVua2dtIn0.riAonXTOECg3Tgd4-s321Q',
+    style: 'mapbox://styles/samuelcornell/clj50va1p000d01pw42psa476',
+    accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozc2lyNHIwYzllM3JtbGRlOXVsdHk3In0.XaZRC_y8cccqy6aFmfi8XQ',
     showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
@@ -13,8 +13,40 @@ var config = {
     title: 'Mapping selfie-related incidents in Australia',
     subtitle: 'A map visualisation of all selfie-related deaths and injuries reported by the media in Australia',
     byline: 'By Samuel Cornell',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: News Reports. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
+        {
+            id: 'title-id',
+            // title: 'An overview',
+            // image: './path/to/image/source.png',
+            description: '<span style="font-size:24px">People are dying and getting injured from taking selfies all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfiecides</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
+            location: {
+                center: [134.62525, -25.19555],
+                zoom: 3.67,
+                pitch: 45.00,
+                bearing: -2.40
+            },
+            onChapterEnter: [
+                {
+                    layer: 'selfies',
+                    opacity: 0
+                },
+                {
+                    layer: 'selfies',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'selfies',
+                    opacity: 0
+                },
+                {
+                    layer: 'selfies',
+                    opacity: 0
+                }
+            ]
+        },
         {
             id: 'slug-style-id',
             alignment: 'left',

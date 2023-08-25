@@ -1,7 +1,7 @@
 
 # Link To Data Viz
 
-[The visualization can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html/)
+[The visualization can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html)
 
 THIS IS FIRMLY A WORK IN PROGRESS. It is not intended to be a comprehensive list or database of every selfie related event in the world. Nevertheless, it provides a geographical snapshot and highlights the issue. Mainly, it's a data viz experiment for me.
 

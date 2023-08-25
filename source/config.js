@@ -10,7 +10,7 @@ var config = {
     use3dTerrain: true,
     auto: false,
     title: 'Mapping selfie-related incidents in Australia',
-    subtitle: 'A map visualisation of all selfie-related deaths and injuries reported by the media in Australia',
+    subtitle: 'A map visualisation of selfie-related incidents reported by the media in Australia',
     byline: 'By Samuel Cornell',
     footer: 'Source: News Reports. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
@@ -19,7 +19,7 @@ var config = {
             alignment: 'left',
             title: 'An overview',
             // image: './path/to/image/source.png',
-            description: '<span style="font-size:24px">People are dying and getting injured from taking selfies all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfiecides</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
+            description: '<span style="font-size:24px">People are dying and getting injured from taking selfies all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfie incidents</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
             location: {
                 center: [63.39769, 2.91579],
                 zoom: 1.34,
@@ -169,9 +169,75 @@ var config = {
             hidden: false,
             title: 'Second Selfie Death at Vaucluse',
            /// image: './images/vaucluse2.jpg',
-            description: 'In 2020, a second person died at Diamond Bay Reserve in Vauculuse after falling from the cliffs while posing for a selfie. 21 y/o female.',
+            description: '<a href="https://www.telegraph.co.uk/news/2020/01/13/british-woman-dies-australia-falling-cliff-near-sydney/">In 2020, a second person died at Diamond Bay Reserve in Vauculuse after falling from the cliffs while posing for a selfie. 21 y/o female.</a>', 
             location: {
                 center: [151.282771, -33.862684],
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'selfies',
+                opacity: 0.33
+            },
+            {
+                layer: 'selfies',
+                opacity: .33
+            }],
+            onChapterExit: [{
+                layer: 'selfies',
+                opacity: 0.33
+            },
+            {
+                layer: 'selfies',
+                opacity: 0.33
+            }]
+        },
+        {
+            id: 'Paradise_Caves_Fall',
+            alignment: 'left',
+            hidden: false,
+            title: 'Paradise Caves Fall',
+           /// image: './images/vaucluse2.jpg',
+            description: '<a href="https://7news.com.au/news/qld/woman-falls-5m-from-cliff-of-paradise-caves-at-sunshine-beach-near-noosa-c-11521583">American tourist falls while taking picture from cliff at Paradise Caves at Sunshine Beach</a>',
+            location: {
+                center: [153.11678, -26.39232], 	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'selfies',
+                opacity: 0.33
+            },
+            {
+                layer: 'selfies',
+                opacity: .33
+            }],
+            onChapterExit: [{
+                layer: 'selfies',
+                opacity: 0.33
+            },
+            {
+                layer: 'selfies',
+                opacity: 0.33
+            }]
+        },
+        {
+            id: 'Vaucluse_fall_injury',
+            alignment: 'right',
+            hidden: false,
+            title: 'Vaucluse fall - a notorious spot',
+           /// image: './images/vaucluse2.jpg',
+            description: '<a href="https://www.9news.com.au/national/teenage-girl-falls-from-deadly-selfie-spot-diamond-bay-reserve-sydney-vaucluse/5874baa1-fc17-4539-b694-12cb557bb3bb">Teenage girl falls, but fortunately survives.</a>',
+            location: {
+                center: [151.282771, -33.862684], 	
                 zoom: 14.90,
                 pitch: 45.00,
                 bearing: -40.00

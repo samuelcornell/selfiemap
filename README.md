@@ -1,5 +1,5 @@
 
-# Link To Data Viz
+# Link To Scrolly Map
 
 [The visualization can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html)
 

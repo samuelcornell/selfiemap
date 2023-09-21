@@ -1,9 +1,9 @@
 var config = {
-    style: 'mapbox://styles/samuelcornell/clm76o0a500kg01r861lz1czm',
+    style: 'mapbox://styles/samuelcornell/clmsnplac01zj01rd4wqhecou',
     accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozc2lyNHIwYzllM3JtbGRlOXVsdHk3In0.XaZRC_y8cccqy6aFmfi8XQ',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    projection: 'equirectangular',
+    projection: 'globe',
     inset: true,
     theme: 'dark',
     alignment: 'left',
@@ -22,33 +22,33 @@ var config = {
             description: '<span style="font-size:24px">People are dying and getting injured from taking selfies all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfie incidents</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
             location: {
                 center: [63.39769, 2.91579],
-                zoom: 1.34,
-                pitch: 6.00,
-                bearing: 0.00
+                zoom: 2.34,
+                pitch: 0,
+                bearing: 0.
             },
             mapAnimation: 'flyTo',
             speed: 1.2,
             curve: 1.42,
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'selfies',
+                    layer: 'world_heat',
                     opacity: 0
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'world_heat',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'selfies',
+                    layer: 'world_heat',
                     opacity: 0
                 },
                 {
-                    layer: 'selfies',
-                    opacity: 0
+                    layer: 'australia',
+                    opacity: 0.5
                 }
             ]
         },
@@ -72,21 +72,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 }
             ]
@@ -111,21 +111,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 }
             ]
@@ -150,21 +150,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 },
                 {
-                    layer: 'selfies',
+                    layer: 'australia',
                     opacity: 0.33
                 }
             ]
@@ -188,21 +188,21 @@ var config = {
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }
         ],
         onChapterExit: [
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -225,19 +225,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -255,22 +255,22 @@ var config = {
                 bearing: -40.00
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -291,19 +291,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -321,22 +321,22 @@ var config = {
                 bearing: -40.00
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -357,19 +357,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -390,19 +390,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         },
@@ -423,19 +423,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             },
             {
-                layer: 'selfies',
+                layer: 'australia',
                 opacity: 0.33
             }]
         }

@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/samuelcornell/clmsnplac01zj01rd4wqhecou',
+    style: 'mapbox://styles/samuelcornell/cls2u2w1100bj01r60wq07whw',
     accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozc2lyNHIwYzllM3JtbGRlOXVsdHk3In0.XaZRC_y8cccqy6aFmfi8XQ',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -12,7 +12,7 @@ var config = {
     title: 'Visual ‘scrollytelling’: Mapping selfie-related incidents in Australia to identify the geographical problem for emergency services',
     subtitle: 'A map visualisation of selfie-related incidents reported by the media in Australia',
     byline: 'By Samuel Cornell',
-    footer: 'Source: News Reports. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: News Reports. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <a href="https://www.jmir.org/2023/1/e47202/PDF">Selfie-Related Incidents: Narrative Review and Media Content Analysis</a>' ,
     chapters: [
         {
             id: 'title',
@@ -33,21 +33,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'world_heat',
+                    layer: 'heatmap',
                     opacity: 0
                 },
                 {
-                    layer: 'world_heat',
+                    layer: 'heatmap',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'world_heat',
+                    layer: 'heatmap',
                     opacity: 0
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.5
                 }
             ]
@@ -72,21 +72,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 }
             ]
@@ -111,21 +111,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap,
                     opacity: 0.33
                 }
             ]
@@ -150,21 +150,21 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: .33
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 },
                 {
-                    layer: 'australia',
+                    layer: 'heatmap',
                     opacity: 0.33
                 }
             ]
@@ -188,21 +188,21 @@ var config = {
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }
         ],
         onChapterExit: [
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -225,19 +225,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -258,19 +258,19 @@ var config = {
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -291,19 +291,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -324,19 +324,19 @@ var config = {
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -357,19 +357,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmapa',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -390,19 +390,19 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
         },
@@ -423,21 +423,87 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {
-                layer: 'australia',
+                layer: 'heatmap',
                 opacity: 0.33
             }]
-        }
+        },
+        {
+            id: 'Josephine',
+            alignment: 'center',
+            hidden: false,
+            title: 'Three person rescue of three young males trapped in the water at Josephine Falls',
+           /// image: './images/vaucluse2.jpg',
+            description: '<a href="https://au.news.yahoo.com/aussies-fume-over-dangerous-mistake-at-deadly-waterfall-theres-always-one-064337596.html">Yahoo News.</a>',
+            location: {
+                center: [145.8569, -17.43713], 	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: .33
+            }],
+            onChapterExit: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: 0.33
+            }]
+        },
+        {
+            id: 'Cedar_Creek',
+            alignment: 'right',
+            hidden: false,
+            title: 'Man, 22, airlifted to hospital after falling 10m from waterfall at Cedar Creek on the Gold Coast',
+           /// image: './images/vaucluse2.jpg',
+            description: '<a href="https://7news.com.au/news/man-22-airlifted-to-hospital-after-falling-10m-from-waterfall-at-cedar-creek-on-the-gold-coast-c-13147411">7 News.</a>',
+            location: {
+                center: [152.77931, -27.32346], 	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: .33
+            }],
+            onChapterExit: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: 0.33
+            }]
+        },
     ]
 };

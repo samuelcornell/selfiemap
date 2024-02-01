@@ -39,8 +39,3 @@ Mohit J. Jain & Kinjal J. Mavani (2017) A comprehensive study of worldwide selfi
 Cornell, S., Brander, R.W. and Peden, A.E. (2023), Preventing selfie-related incidents: Taking a public health approach to reduce unnecessary burden on emergency medicine services. Emergency Medicine Australasia, 35: 691-693. https://doi.org/10.1111/1742-6723.14219
 
 Manuel Linares, Laura Santos, Joaquín Santos, Cristina Juesas, Miguel Górgolas, José-Manuel Ramos-Rincón, Selfie-related deaths using web epidemiological intelligence tool (2008–2021): a cross-sectional study, Journal of Travel Medicine, Volume 29, Issue 5, July 2022, taab170, https://doi.org/10.1093/jtm/taab170
-
-
-
- 
-

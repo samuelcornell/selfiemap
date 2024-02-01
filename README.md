@@ -3,7 +3,7 @@
 
 [The map and story can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html)
 
-This map is evolving as new cases arises. There is a particular focus on those cases in Australia, at aquatic locations. It is not intended to be a comprehensive list or database of every selfie-related event in the world. Nevertheless, it provides a geographical snapshot and highlights the scale of the issue, globally and in Australia. 
+This map is evolving as new cases arises. It includes cases of reported misadventure in the natural environment which lead to death or injury and are attributed to taking selfies or social media-related activity. There is a particular focus on those cases in Australia, at aquatic locations. It is not intended to be a comprehensive list or database of every selfie-related event in the world. Nevertheless, it provides a geographical snapshot and highlights the scale of the issue, globally and in Australia. 
 
 # Project Description
 
@@ -14,7 +14,7 @@ This map is evolving as new cases arises. There is a particular focus on those c
 
 ## Inspiration
 
-I am interested in mapping selfie incidents in Australia.
+I am interested in mapping selfie and social media-related incidents in Australia.
 
 ## What it does
 

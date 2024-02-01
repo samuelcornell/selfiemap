@@ -1,8 +1,10 @@
 
 # Link To Scrolly Map
 
-[The map and story can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html)
+[The map and story can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html) 
 
+**The map is not optimised for mobile phone viewing, and is best viewed on a computer.
+**
 This map is evolving as new cases arises. It includes cases of reported misadventure in the natural environment which lead to death or injury and are attributed to taking selfies or social media-related activity. There is a particular focus on those cases in Australia, at aquatic locations. It is not intended to be a comprehensive list or database of every selfie-related event in the world. Nevertheless, it provides a geographical snapshot and highlights the scale of the issue, globally and in Australia. Of note, the media may report that a case was social media-related when in fact it isn't, and vice versa. This is a challenging aspect of this kind of research.
 
 For more information on this problem, please see my review article 'Selfie-Related Incidents: Narrative Review and Media Content Analysis'

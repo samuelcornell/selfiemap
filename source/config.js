@@ -3,7 +3,7 @@ var config = {
     accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozc2lyNHIwYzllM3JtbGRlOXVsdHk3In0.XaZRC_y8cccqy6aFmfi8XQ',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    projection: 'globe',
+    projection: 'mercator',
     inset: true,
     theme: 'dark',
     alignment: 'left',
@@ -22,8 +22,84 @@ var config = {
             description: '<span style="font-size:24px">People are dying and getting injured from taking selfies, and social media misadventure, all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfie incidents</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
             location: {
                 center: [63.39769, 2.91579],
-                zoom: 2.34,
+                zoom: 1.0,
                 pitch: 0,
+                bearing: 0.
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.5
+                }
+            ]
+        },
+        {
+            id: 'world',
+            alignment: 'right',
+            title: 'Social media and selfie-related incidents are an issue worldwide',
+            // image: './path/to/image/source.png',
+            description: 'India has more selfie related incidents than any other country. The red dots show the large number of incidents that have taken place on the subcontinent, and, tragically, many involve drownings.',
+            location: {
+                center: [75.59855, 25.96531],
+                zoom: 2.5,
+                pitch: 45,
+                bearing: 0.
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.5
+                }
+            ]
+        },
+        {
+            id: 'Australia',
+            alignment: 'left',
+            title: 'An overview of Australia',
+            // image: './path/to/image/source.png',
+            description: 'Let us take a look at Australia. Each dot ● represents an incident attributable to social media or selfie-related misadventure. There are 13 cases since 2018.',
+            location: {
+                center: [132.00797, -25.41030],
+                zoom: 3.56,
+                pitch: 45.00,
                 bearing: 0.
             },
             mapAnimation: 'flyTo',

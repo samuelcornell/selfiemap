@@ -31,7 +31,7 @@ Samuel Cornell built this map and visualisation. This map and site is based on t
 
 Cornell S, Brander R, Peden A. Selfie-Related Incidents: Narrative Review and Media Content Analysis. J Med Internet Res 2023;25:e47202 doi: 10.2196/47202 
 
-Bansal, Agam1,; Garg, Chandan2; Pakhare, Abhijith1; Gupta, Samiksha1. Selfies: A boon or bane?. Journal of Family Medicine and Primary Care 7(4):p 828-831, Jul–Aug 2018. | DOI: 10.4103/jfmpc.jfmpc_109_18 
+Bansal, Agam1,; Garg, Chandan2; Pakhare, Abhijith1; Gupta, Samiksha1. Selfies: A boon or bane?. Journal of Family Medicine and Primary Care 7(4):p 828-831, Jul–Aug 2018. DOI: 10.4103/jfmpc.jfmpc_109_18
 
 Mohit J. Jain & Kinjal J. Mavani (2017) A comprehensive study of worldwide selfie-related accidental mortality: a growing problem of the modern society, International Journal of Injury Control and Safety Promotion, 24:4, 544-549, DOI: 10.1080/17457300.2016.1278240 
 

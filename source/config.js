@@ -56,8 +56,84 @@ var config = {
             id: 'world',
             alignment: 'right',
             title: 'Social media and selfie-related incidents are an issue worldwide',
-            // image: './path/to/image/source.png',
+            image: './images/bycountry.png',
             description: 'India has more selfie related incidents than any other country. The red dots show the large number of incidents that have taken place on the subcontinent, and, tragically, many involve drownings.',
+            location: {
+                center: [75.59855, 25.96531],
+                zoom: 2.5,
+                pitch: 45,
+                bearing: 0.
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.5
+                }
+            ]
+        },
+        {
+            id: 'world',
+            alignment: 'right',
+            title: 'Drowning and falling from heights, such as cliff edges or waterfalls, are the largest cause of death or injury in the natural environment',
+            image: './images/typesofincidentsworld.png',
+            description: 'Interestingly, there has been almost double the number of falls compared to drowning.',
+            location: {
+                center: [75.59855, 25.96531],
+                zoom: 2.5,
+                pitch: 45,
+                bearing: 0.
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.5
+                }
+            ]
+        },
+        {
+            id: 'world_2',
+            alignment: 'right',
+            title: '',
+            image: './images/worldcasesbyyear.png',
+            description: 'Selfie and social media-related incidents show no signs of abating. Nevertheless, 2016 was an awful year for these types of incidents, particularly in India.',
             location: {
                 center: [75.59855, 25.96531],
                 zoom: 2.5,
@@ -95,7 +171,45 @@ var config = {
             alignment: 'left',
             title: 'An overview of Australia',
             // image: './path/to/image/source.png',
-            description: 'Let us take a look at Australia. Each dot ● represents an incident attributable to social media or selfie-related misadventure. There are 13 cases since 2018.',
+            description: 'Let us take a look at Australia. Each dot ● represents an incident attributable to social media or selfie-related misadventure. There are 13 cases since 2018. The east coast of Australia has been the epicentre of these incidents. And there is a few notorious hotspots including the Figure Eight Pools, Diamond Bay Reserve and South East Queensland.',
+            location: {
+                center: [132.00797, -25.41030],
+                zoom: 3.56,
+                pitch: 45.00,
+                bearing: 0.
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.5
+                }
+            ]
+        },
+        {
+            id: 'Australia_2',
+            alignment: 'left',
+            title: '',
+            image: './images/australiatypeincident.png',
+            description: 'Of note, in Australia, all of the selfie or social media relared incidents that have occurred in the natural environment have involved a fall, mostly around aquatic areas such as ocean cliffs or waterfalls.',
             location: {
                 center: [132.00797, -25.41030],
                 zoom: 3.56,

@@ -9,7 +9,7 @@ var config = {
     alignment: 'left',
     use3dTerrain: true,
     auto: false,
-    title: 'Mapping selfie and social media-related incidents in Australia',
+    title: 'The grave cost of social media misadventure in nature',
     subtitle: '',
     byline: 'By Samuel Cornell',
     footer: 'Source: News Reports. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <a href="https://www.jmir.org/2023/1/e47202/PDF">Selfie-Related Incidents: Narrative Review and Media Content Analysis</a>' ,
@@ -19,7 +19,7 @@ var config = {
             alignment: 'left',
             title: 'An overview',
             // image: './path/to/image/source.png',
-            description: '<span style="font-size:24px">People are dying and getting injured from taking selfies, and social media misadventure, all over the world, and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Selfie incidents</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
+            description: '<span style="font-size:24px">People are dying and getting injured from social media misadventure all over the world and especially in aquatic locations.</span><br><br><span style="font-size:18px"><i>How does Australia compare?</i></span><br><br><i>Mapping Australian Social Media Misadventure</i> | By Samuel Cornell.<br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
             location: {
                 center: [63.39769, 2.91579],
                 zoom: 1.0,
@@ -169,9 +169,9 @@ var config = {
         {
             id: 'Australia',
             alignment: 'left',
-            title: 'An overview of Australia',
+            title: 'However, Australia is no stranger to these novel way to die.',
             // image: './path/to/image/source.png',
-            description: 'Let us take a look at Australia. Each dot ● represents an incident attributable to social media or selfie-related misadventure. There are 13 cases since 2018. The east coast of Australia has been the epicentre of these incidents. And there is a few notorious hotspots including the Figure Eight Pools, Diamond Bay Reserve and South East Queensland.',
+            description: 'Let us take a look at Australia. Each dot ● represents an incident attributable to social media or selfie-related misadventure. There are 13 cases since 2018 but many more have gone unreported. The east coast of Australia has been the epicentre of these incidents. And there is a few notorious hotspots including the Figure Eight Pools, Diamond Bay Reserve and spots in South East Queensland.',
             location: {
                 center: [132.00797, -25.41030],
                 zoom: 3.56,
@@ -321,6 +321,94 @@ var config = {
             ]
         },
         {
+            id: 'socialmedia',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Driven by social media to get the best shot, people climb barriers, ignore warning signs of dangers, and even go to dangerous places for photos where people have already died or been seriously injured.',
+            image: '',
+            description: `
+                <!-- TikTok Embed via iframe -->
+                <div style="margin-top: 20px; text-align: center;">
+                    <iframe src="https://www.tiktok.com/embed/7269981614652820744" width="325" height="574" frameborder="0" allowfullscreen></iframe>
+                </div>
+            `,
+            location: {
+                center: [151.03861, -34.19481],  	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00,
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ]
+        },
+        {
+            id: 'socialmedia',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Driven by social media to get the best shot, people climb barriers, ignore warning signs of dangers, and even go to dangerous places for photos where people have already died or been seriously injured.',
+            image: '',
+            description: `
+                <!-- Instagram Embed via iframe -->
+                <div style="margin-top: 20px; text-align: center;">
+                    <iframe src="https://www.instagram.com/p/Cp7E6KjPZIf/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+            `,
+            location: {
+                center: [151.03861, -34.19481],  	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00,
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ]
+        },                                            
+        {
             id: 'Vaucluse1',
             alignment: 'left',
             hidden: false,
@@ -359,6 +447,98 @@ var config = {
                 }
             ]
         },
+        {
+            id: 'influencers',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Influencers are known to promote dangerous but beautiful spots on social media, where there is then an influx of other visitors looking for the perfect photo. One influencer who I interviewed told me,',
+            image: '',
+            description: `
+                <blockquote style="
+                    font-size: 1.5em; 
+                    font-style: italic; 
+                    color: #333; 
+                    border-left: 6px solid #ff2424; 
+                    background-color: #f9f9f9; 
+                    padding: 15px 20px; 
+                    margin: 20px 0;
+                    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+                    ">
+                    "I think if you're – obviously, if you're a company that's organising a tour and you know that there's risk, I think you need to disclose that, disclose who is recommended on this, who is not. But I don't think it's a content creator's responsibility to do that. They're just there to entertain."
+                </blockquote>
+                
+            `,
+            location: {
+                center: [151.282771, -33.862684],
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00,
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ]
+        },
+        {
+            id: 'influencers',
+            alignment: 'centre',
+            hidden: false,
+            title: 'These travel and adventure influencers see themselves as "entertainers" not "educators" Thereby relinquishing themselves from responsibility over what can happen when people copy their content.',
+            image: '',
+            description: '',
+            location: {
+                center: [151.282771, -33.862684],
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00,
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ]
+        },             
         {
             id: 'Cape_Solander',
             alignment: 'right',
@@ -430,6 +610,94 @@ var config = {
                 layer: 'heatmap',
                 opacity: 0.33
             }]
+        },
+        {
+            id: 'Landmanagers',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Land managers are struggling to keep up with the latest social media trends, and they find that warning signs and even barriers often do not stop visitors from going to dangerous places for their photos for social media',
+            image: '',
+            description: '',
+            location: {
+                center: [142.410725, -37.239176],
+                zoom: 16.72,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: .33
+            }],
+            onChapterExit: [{
+                layer: 'heatmap',
+                opacity: 0.33
+            },
+            {
+                layer: 'heatmap',
+                opacity: 0.33
+            }]
+        },      
+        {
+            id: 'gowheretheywant',
+            alignment: 'centre',
+            hidden: false,
+            title: 'But an issue that land managers face is that influencers "go where they want", as my interviews attest to.',
+            image: '',
+            description: `
+                <blockquote style="
+                    font-size: 1.5em; 
+                    font-style: italic; 
+                    color: #333; 
+                    border-left: 6px solid #ff2424; 
+                    background-color: #f9f9f9; 
+                    padding: 15px 20px; 
+                    margin: 20px 0;
+                    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+                    ">
+                    "It depends what the reason is that you're not meant to be in a place. If it's extremely dangerous, I would go and assess that risk myself, or if it's illegal or whatever it may be. It all comes down to each situation individually, and I can assess that based on my own morals. But I have as well entered into places that there's ‘keep out’ signs and things like that, too, for a photo"
+                </blockquote>
+                
+            `,
+            location: {
+                center: [151.282771, -33.862684],
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00,
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: .33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ]
         },
         {
             id: 'Second_Vaucluse',
@@ -662,6 +930,43 @@ var config = {
                 opacity: 0.33
             }]
         },
+        {
+            id: 'Josephinevision',
+            alignment: 'center',
+            hidden: false,
+            title: 'Vision',
+            description: `
+                <video id="josephinevision-video" width="100%">
+                    <source src="./video/josephinevision.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><a </a></p>
+            `,
+            location: {
+                center: [145.8569, -17.43713], 	
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: 'playJosephineVisionVideo',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.33
+                },
+                {
+                    callback: 'pauseJosephineVisionVideo'
+                }
+            ]
+        },               
         {
             id: 'Cedar_Creek',
             alignment: 'right',

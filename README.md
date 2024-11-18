@@ -1,7 +1,7 @@
 
 # Link To Scrolly Map
 
-[The map and story can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html) 
+[The map and story can be found here.](https://samuelcornell.github.io/selfiemap/source/index.html)
 
 **The map is not optimised for mobile phone viewing, and is best viewed on a computer.**
 
@@ -27,6 +27,10 @@ This project is an interactive visualisation that updates with every user scroll
 ## Who built it
 
 Samuel Cornell built this map and visualisation. This map and site is based on the work completed by Connor Rothschild and Denizhan-Yigitbas who created their project to map homicides in Houston.
+
+## Contact
+
+If you would like to reach out, please email s.cornell@unsw.edu.au
 
 ## References
 

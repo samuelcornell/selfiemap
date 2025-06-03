@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/samuelcornell/cm0d6ws5500sq01pwen6rcbov',
-    accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbGozc2lyNHIwYzllM3JtbGRlOXVsdHk3In0.XaZRC_y8cccqy6aFmfi8XQ',
+    style: 'mapbox://styles/samuelcornell/clzvz10c2000m01pne6pfer85',
+    accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbTdrMGd4b2MwY3AzMnFweHB1bmdnaTd1In0.RP2eRag2RHMe9j-FWjXr5Q',
     showMarkers: false,
     markerColor: '#3FB1CE',
     projection: 'globe',

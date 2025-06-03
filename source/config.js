@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/samuelcornell/clzvz10c2000m01pne6pfer85',
+    style: 'mapbox://styles/samuelcornell/cm0g4dhe1010y01pn3ysk6xri',
     accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbTdrMGd4b2MwY3AzMnFweHB1bmdnaTd1In0.RP2eRag2RHMe9j-FWjXr5Q',
     showMarkers: false,
     markerColor: '#3FB1CE',

@@ -823,7 +823,7 @@ var config = {
                 opacity: .33
             }],
             onChapterExit: [{
-                layer: 'heatmapa',
+                layer: 'heatmap',
                 opacity: 0.33
             },
             {

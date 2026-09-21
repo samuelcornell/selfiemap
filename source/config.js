@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/samuelcornell/cmhwm1igf002901r6gias1ozh',
+    style: 'mapbox://styles/mapbox/dark-v11',
     accessToken: 'pk.eyJ1Ijoic2FtdWVsY29ybmVsbCIsImEiOiJjbTdrMGd4b2MwY3AzMnFweHB1bmdnaTd1In0.RP2eRag2RHMe9j-FWjXr5Q',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -48,7 +48,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
@@ -86,12 +86,12 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
         {
-            id: 'world',
+            id: 'world_b',
             alignment: 'right',
             title: 'Drowning and falling from heights, such as cliff edges or waterfalls, are the largest cause of death or injury in the natural environment',
             image: './images/incidentsworld.png',
@@ -124,7 +124,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
@@ -162,7 +162,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
@@ -200,7 +200,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
@@ -238,7 +238,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.5
+                    opacity: 0.85
                 }
             ]
         },
@@ -263,7 +263,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -273,11 +273,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
@@ -302,7 +302,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -312,11 +312,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
@@ -346,7 +346,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -356,16 +356,16 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
         {
-            id: 'socialmedia',
+            id: 'socialmedia_2',
             alignment: 'centre',
             hidden: false,
             title: 'Driven by social media to get the best shot, people climb barriers, ignore warning signs of dangers, and even go to dangerous places for photos where people have already died or been seriously injured.',
@@ -390,7 +390,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -400,11 +400,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },                                            
@@ -429,7 +429,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -439,11 +439,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
@@ -482,7 +482,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -492,16 +492,16 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
         {
-            id: 'influencers',
+            id: 'influencers_2',
             alignment: 'centre',
             hidden: false,
             title: 'These travel and adventure influencers see themselves as "entertainers" not "educators" Thereby relinquishing themselves from responsibility over what can happen when people copy their content.',
@@ -521,7 +521,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -531,11 +531,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },             
@@ -559,7 +559,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -569,11 +569,11 @@ var config = {
         onChapterExit: [
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -596,7 +596,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -604,11 +604,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -631,7 +631,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -639,11 +639,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },      
         {
@@ -681,7 +681,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
@@ -691,11 +691,11 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 }
             ]
         },
@@ -717,7 +717,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -725,11 +725,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -750,7 +750,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -758,11 +758,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -783,7 +783,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -791,11 +791,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -816,7 +816,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -824,11 +824,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -849,7 +849,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -857,11 +857,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -882,7 +882,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -890,11 +890,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -915,7 +915,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -923,11 +923,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
         {
@@ -950,17 +950,19 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: 'playJosephineVisionVideo',
             onChapterEnter: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
+                },
+                {
+                    callback: 'playJosephineVisionVideo'
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'heatmap',
-                    opacity: 0.33
+                    opacity: 0.85
                 },
                 {
                     callback: 'pauseJosephineVisionVideo'
@@ -985,7 +987,7 @@ var config = {
             callback: '',
             onChapterEnter: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
@@ -993,11 +995,11 @@ var config = {
             }],
             onChapterExit: [{
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             },
             {
                 layer: 'heatmap',
-                opacity: 0.33
+                opacity: 0.85
             }]
         },
     ]

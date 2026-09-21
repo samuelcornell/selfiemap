@@ -163,6 +163,14 @@ function getLayerPaintType(layer) {
 }
 
 function setLayerOpacity(layer) {
+    // Remember what the story asked for, so a basemap swap can restore it.
+    if (layer.layer === 'heatmap' && typeof layer.opacity === 'number') {
+        heatmapOpacity = layer.opacity;
+    }
+    // A basemap swap removes our layers for a moment; skip until they're back.
+    if (!map.getLayer(layer.layer)) {
+        return;
+    }
     var paintProps = getLayerPaintType(layer.layer);
     paintProps.forEach(function(prop) {
         var options = {};
@@ -173,6 +181,23 @@ function setLayerOpacity(layer) {
         }
         map.setPaintProperty(layer.layer, prop, layer.opacity, options);
     });
+}
+
+// A chapter's onChapterEnter / onChapterExit list can contain either a layer
+// opacity change or a { callback: 'functionName' } entry. Send each entry to
+// the right handler rather than assuming they are all layers.
+function applyChapterStep(step) {
+    if (step.callback) {
+        if (typeof window[step.callback] === 'function') {
+            window[step.callback]();
+        } else {
+            console.warn('Chapter callback is not defined:', step.callback);
+        }
+        return;
+    }
+    if (step.layer) {
+        setLayerOpacity(step);
+    }
 }
 
 function playVideo(videoId) {
@@ -187,6 +212,15 @@ function pauseVideo(videoId) {
     if (video) {
         video.pause();
     }
+}
+
+// config.js refers to these two by name from the Josephine Falls chapter.
+function playJosephineVisionVideo() {
+    playVideo('josephinevision-video');
+}
+
+function pauseJosephineVisionVideo() {
+    pauseVideo('josephinevision-video');
 }
 
 var story = document.getElementById('story');
@@ -320,28 +354,121 @@ if (config.showMarkers) {
 var scroller = scrollama();
 
 
-map.on("load", function() {
-    if (config.use3dTerrain) {
-        map.addSource('mapbox-dem', {
-            'type': 'raster-dem',
-            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-            'tileSize': 512,
-            'maxzoom': 14
+// --- Basemap ------------------------------------------------------------
+// The wide chapters read best as a dark globe; the close-up chapters need
+// satellite imagery to show the place where people actually came unstuck.
+// Swap between the two as the story moves in and out.
+var BASEMAP_WIDE = config.style;
+var BASEMAP_CLOSE = 'mapbox://styles/mapbox/satellite-streets-v12';
+var BASEMAP_SWITCH_ZOOM = 5;
+var currentBasemap = config.style;
+
+// Mapbox drops the 'style.load' event if setStyle is called again while a
+// style is still loading, which would leave the heatmap missing. So only one
+// swap is ever in flight; the latest request waits its turn.
+var basemapPending = true;
+var basemapWanted = config.style;
+
+// Kept in step with the chapters so a basemap swap doesn't reset the heatmap.
+var heatmapOpacity = 0.85;
+
+function basemapFor(zoom) {
+    return zoom > BASEMAP_SWITCH_ZOOM ? BASEMAP_CLOSE : BASEMAP_WIDE;
+}
+
+function setBasemapFor(zoom) {
+    basemapWanted = basemapFor(zoom);
+    if (basemapWanted === currentBasemap || basemapPending) {
+        return;
+    }
+    applyBasemap(basemapWanted);
+}
+
+function applyBasemap(style) {
+    basemapPending = true;
+    currentBasemap = style;
+    // setStyle throws away everything the new style doesn't define, so
+    // onStyleLoad puts our layers back once it has finished.
+    map.setStyle(style);
+}
+
+function onStyleLoad() {
+    addCustomLayers();
+    basemapPending = false;
+    // If the reader scrolled past the switch point while this style was
+    // still loading, catch up now.
+    if (basemapWanted !== currentBasemap) {
+        applyBasemap(basemapWanted);
+    }
+}
+
+// The incident tileset, the atmosphere and the terrain are ours rather than
+// the basemap's, so they have to be re-added every time a style loads.
+function addCustomLayers() {
+    if (!map.getSource('incidents')) {
+        map.addSource('incidents', {
+            'type': 'vector',
+            'url': 'mapbox://samuelcornell.5wme3bqt'
         });
+    }
+
+    if (!map.getLayer('heatmap')) {
+        map.addLayer({
+            'id': 'heatmap',
+            'type': 'heatmap',
+            'source': 'incidents',
+            'source-layer': 'selfieincidentsworldmapbox_co-139ttg',
+            'paint': {
+                'heatmap-opacity': heatmapOpacity,
+                'heatmap-radius': ['interpolate', ['linear'], ['zoom'],
+                    0, 14, 3, 22, 8, 30, 14, 40, 18, 55],
+                'heatmap-intensity': ['interpolate', ['linear'], ['zoom'],
+                    0, 1.5, 6, 2.2, 12, 3]
+            }
+        });
+    }
+
+    // Atmosphere and starfield behind the globe.
+    map.setFog({
+        'range': [0.8, 8],
+        'color': '#1b3b5f',
+        'horizon-blend': 0.05,
+        'high-color': '#1f5fae',
+        'space-color': '#000512',
+        'star-intensity': 0.4
+    });
+
+    if (config.use3dTerrain) {
+        if (!map.getSource('mapbox-dem')) {
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+        }
         // add the DEM source as a terrain layer with exaggerated height
         map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
         // add a sky layer that will show when the map is highly pitched
-        map.addLayer({
-            'id': 'sky',
-            'type': 'sky',
-            'paint': {
-                'sky-type': 'atmosphere',
-                'sky-atmosphere-sun': [0.0, 0.0],
-                'sky-atmosphere-sun-intensity': 15
-            }
-        });
-    };
+        if (!map.getLayer('sky')) {
+            map.addLayer({
+                'id': 'sky',
+                'type': 'sky',
+                'paint': {
+                    'sky-type': 'atmosphere',
+                    'sky-atmosphere-sun': [0.0, 0.0],
+                    'sky-atmosphere-sun-intensity': 15
+                }
+            });
+        }
+    }
+}
+
+// Fires on the first style and again after every basemap swap.
+map.on('style.load', onStyleLoad);
+
+map.on("load", function() {
 
     // As the map moves, grab and update bounds in inset map.
     if (config.inset) {
@@ -359,6 +486,7 @@ map.on("load", function() {
         var chapter = config.chapters[current_chapter];
         
         response.element.classList.add('active');
+        setBasemapFor(chapter.location.zoom);
         map[chapter.mapAnimation || 'flyTo'](chapter.location);
 
         // Incase you do not want to have a dynamic inset map,
@@ -376,9 +504,9 @@ map.on("load", function() {
             marker.setLngLat(chapter.location.center);
         }
         if (chapter.onChapterEnter.length > 0) {
-            chapter.onChapterEnter.forEach(setLayerOpacity);
+            chapter.onChapterEnter.forEach(applyChapterStep);
         }
-        if (chapter.callback) {
+        if (chapter.callback && typeof window[chapter.callback] === 'function') {
             window[chapter.callback]();
         }
         if (chapter.rotateAnimation) {
@@ -402,9 +530,9 @@ map.on("load", function() {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');
         if (chapter.onChapterExit.length > 0) {
-            chapter.onChapterExit.forEach(setLayerOpacity);
+            chapter.onChapterExit.forEach(applyChapterStep);
         }
-        if (chapter.callback) {
+        if (chapter.callback && typeof window[chapter.callback] === 'function') {
             window[chapter.callback]();
         }
     });

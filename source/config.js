@@ -38,7 +38,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -76,7 +76,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -114,7 +114,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -152,7 +152,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -190,7 +190,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -228,7 +228,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -267,7 +267,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -306,7 +306,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -314,6 +314,35 @@ var config = {
                     layer: 'heatmap',
                     opacity: 0.85
                 },
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
+        },
+        {
+            id: 'Wedding_Cake_Rock',
+            alignment: 'right',
+            hidden: false,
+            title: 'Visits to Wedding Cake Rock in the Royal National Park rose from roughly 2,000 a month to more than 10,000 in early 2015, driven by photographs circulating online. It was closed to the public that May after a geotechnical assessment found the formation could collapse into the sea within a decade. Fines of $300 were introduced in March 2016. Visitors still climb the fence.',
+            location: {
+                center: [151.152417, -34.109667],
+                zoom: 15.20,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
                 {
                     layer: 'heatmap',
                     opacity: 0.85
@@ -350,7 +379,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -394,7 +423,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -433,7 +462,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -486,7 +515,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -525,7 +554,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -563,7 +592,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }
         ],
         onChapterExit: [
@@ -600,7 +629,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -635,7 +664,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -646,6 +675,64 @@ var config = {
                 opacity: 0.85
             }]
         },      
+        {
+            id: 'Cape_Woolamai',
+            alignment: 'left',
+            hidden: false,
+            title: 'In 2023, a 22 year-old tourist edged towards the cliff edge at Cape Woolamai on Phillip Island to take a photograph, slipped, and fell 50 metres. She survived with serious injuries and was winched out by helicopter.',
+            location: {
+                center: [145.35300, -38.55800],
+                zoom: 15.20,
+                pitch: 50.00,
+                bearing: -30.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
+        },
+        {
+            id: 'Bushrangers_Bay',
+            alignment: 'right',
+            hidden: false,
+            title: 'In early 2023, a 24 year-old man died after falling from rocks at Bushrangers Bay, on the Mornington Peninsula coast between Cape Schanck and Main Creek.',
+            location: {
+                center: [144.90500, -38.48650],
+                zoom: 15.00,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
+        },
         {
             id: 'gowheretheywant',
             alignment: 'centre',
@@ -685,7 +772,7 @@ var config = {
                 },
                 {
                     layer: 'heatmap',
-                    opacity: .33
+                    opacity: 0.85
                 }
             ],
             onChapterExit: [
@@ -721,7 +808,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -754,7 +841,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -787,7 +874,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -820,7 +907,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -853,7 +940,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -886,7 +973,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -896,6 +983,35 @@ var config = {
                 layer: 'heatmap',
                 opacity: 0.85
             }]
+        },
+        {
+            id: 'Crystal_Cascades',
+            alignment: 'left',
+            hidden: false,
+            title: 'Freshwater Creek runs over the Crystal Cascades in a valley west of Cairns, where thousands of visitors come each year for the clear pools along the rocks. A young man drowned here in 2014, a father and son in 2023, and a tourist in 2024.',
+            location: {
+                center: [145.67944, -16.96167],
+                zoom: 14.90,
+                pitch: 45.00,
+                bearing: -40.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
         },
         {
             id: 'Josephine',
@@ -919,7 +1035,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -991,7 +1107,7 @@ var config = {
             },
             {
                 layer: 'heatmap',
-                opacity: .33
+                opacity: 0.85
             }],
             onChapterExit: [{
                 layer: 'heatmap',
@@ -1001,6 +1117,94 @@ var config = {
                 layer: 'heatmap',
                 opacity: 0.85
             }]
+        },
+        {
+            id: 'wider_impact',
+            alignment: 'center',
+            hidden: false,
+            title: 'Each incident ripples outward. Emergency services spend thousands of dollars and many hours on helicopter winches and technical rope rescues. Councils face litigation, reputational damage and arguments about closing the very lookouts people travel to see. Communities watch fragile and culturally significant places trampled for content. For those who survive, recovery can take years, and some injuries never fully heal.',
+            location: {
+                center: [132.00797, -25.41030],
+                zoom: 3.56,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
+        },
+        {
+            id: 'what_is_missing',
+            alignment: 'center',
+            hidden: false,
+            title: 'Half the land managers surveyed were not recording selfie-related incidents at all, and most said signs and fences were no longer working on a digital-native audience. The issue is still not treated as a distinct public health problem in the way drowning or road trauma are. Without that framing there is little funding for prevention, no routine data collection, and no coordination across jurisdictions.',
+            location: {
+                center: [132.00797, -25.41030],
+                zoom: 3.56,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
+        },
+        {
+            id: 'closing',
+            alignment: 'center',
+            hidden: false,
+            title: '“You can put up a fence or a sign, but if someone wants that photo, they’ll find a way around it.” — Australian land manager',
+            description: 'If we want to keep these places both open and safe, prevention will have to be as persuasive as the pull that brings people to them.',
+            location: {
+                center: [135.00000, -15.00000],
+                zoom: 1.80,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            speed: 1.2,
+            curve: 1.42,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'heatmap',
+                    opacity: 0.85
+                }
+            ]
         },
     ]
 };
